@@ -1,5 +1,5 @@
 # Makersharks Assessment
-Implemented a user registration and user details fetch endpoints for a RESTful API using Spring Boot.
+Implemented a user registration and user details fetch endpoints RESTful API using Spring Boot.
 
 Steps to run->
 1. Clone the repository
@@ -22,15 +22,17 @@ This section provides the curl commands to interact with the user API.(These cur
 * URL: http://localhost:8080/api/user/register
 
 * Request Headers:
-- Content-Type: application/json
-- accept: application/json
-- Request Body:
-
-id (integer): User ID
-userName (string): User's name
-email (string): User's email address
-password (string): User's password
-
+     * Content-Type: application/json
+     * accept: application/json
+     * Request Body:
+ ```json
+  {
+    "id": 0,
+    "userName": "Azara",
+    "email": "azara@gmail.com",
+    "password": "9876"
+  }
+ ```
 * Curl Command: 
 ```sh
 curl -X POST "http://localhost:8080/api/user/register" \
@@ -44,20 +46,22 @@ curl -X POST "http://localhost:8080/api/user/register" \
 * URL: http://localhost:8080/api/user/fetchall
 
 * Request Headers:
-- accept: application/json
+        * accept: application/json
 
 * Curl Command:
+```sh
 curl -X GET "http://localhost:8080/api/user/fetchall" -H "accept: application/json"
+```
 
 3. Fetch User by Username
 * Description: This endpoint retrieves a user by their username.
 * Method: GET
-* URL: http://localhost:8080/api/user/fetch?username=Azara
+* URL:```sh http://localhost:8080/api/user/fetch?username=Azara ```
 
 * Request Parameters:
 - username (string): The username of the user to retrieve
 * Request Headers:
-- accept: application/json
+       * accept: application/json
 
 * Curl Command:
-curl -X GET "http://localhost:8080/api/user/fetch?username=Azara" -H "accept: application/json"
+```sh curl -X GET "http://localhost:8080/api/user/fetch?username=Azara" -H "accept: application/json"   ```
