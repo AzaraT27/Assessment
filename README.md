@@ -32,8 +32,12 @@ email (string): User's email address
 password (string): User's password
 
 * Curl Command: 
-curl -X POST "http://localhost:8080/api/user/register" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"id\": 0, \"userName\": \"Azara\", \"email\": \"azara@gmail.com\", \"password\": \"9876\"}"
-
+```sh
+curl -X POST "http://localhost:8080/api/user/register" \
+     -H "accept: application/json" \
+     -H "Content-Type: application/json" \
+     -d "{\"id\": 0, \"userName\": \"Azara\", \"email\": \"azara@gmail.com\", \"password\": \"9876\"}" 
+```
 2. Fetch All Users
 * Description: This endpoint retrieves all registered users.
 * Method: GET
