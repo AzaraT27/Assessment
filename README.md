@@ -56,7 +56,7 @@ curl -X GET "http://localhost:8080/api/user/fetchall" -H "accept: application/js
 3. Fetch User by Username
 * Description: This endpoint retrieves a user by their username.
 * Method: GET
-* URL:```sh http://localhost:8080/api/user/fetch?username=Azara ```
+* URL: http://localhost:8080/api/user/fetch?username=Azara 
 
 * Request Parameters:
 - username (string): The username of the user to retrieve
@@ -64,4 +64,6 @@ curl -X GET "http://localhost:8080/api/user/fetchall" -H "accept: application/js
        * accept: application/json
 
 * Curl Command:
-```sh curl -X GET "http://localhost:8080/api/user/fetch?username=Azara" -H "accept: application/json"   ```
+```sh
+curl -X GET "http://localhost:8080/api/user/fetch?username=Azara" -H "accept: application/json"
+ ```
