@@ -5,14 +5,14 @@ Steps to run->
 1. Clone the repository
 2. Open the project in your IDE.
 3. Run the project.
-4. I have used H2 database. 
-    Url to access H2 database - http://localhost:8080/h2-console
-    Login to the H2 console with these details -
-    JDBC URL: jdbc:h2:mem:testdb
-    Username: Azara
-    Password: @1234
-5. Documentation of API using Swagger -
-   Url - http://localhost:8080/swagger-ui/index.html
+4. I have used H2 database.
+   * Url to access H2 database - http://localhost:8080/h2-console
+   * Login to the H2 console with these details -
+   * JDBC URL: jdbc:h2:mem:testdb
+   * Username: Azara
+   * Password: @1234
+6. Documentation of API using Swagger -
+   * Url - http://localhost:8080/swagger-ui/index.html
 
 # API Endpoints
 This section provides the curl commands to interact with the user API.(These curl commands work in windows)
