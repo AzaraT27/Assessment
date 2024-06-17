@@ -35,10 +35,7 @@ This section provides the curl commands to interact with the user API.(These cur
  ```
 * Curl Command: 
 ```sh
-curl -X POST "http://localhost:8080/api/user/register" \
-     -H "accept: application/json" \
-     -H "Content-Type: application/json" \
-     -d "{\"id\": 0, \"userName\": \"Azara\", \"email\": \"azara@gmail.com\", \"password\": \"9876\"}" 
+curl -X POST "http://localhost:8080/api/user/register" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"id\": 0, \"userName\": \"Azara\", \"email\": \"azara@gmail.com\", \"password\": \"9876\"}"
 ```
 2. Fetch All Users
 * Description: This endpoint retrieves all registered users.
@@ -66,4 +63,5 @@ curl -X GET "http://localhost:8080/api/user/fetchall" -H "accept: application/js
 * Curl Command:
 ```sh
 curl -X GET "http://localhost:8080/api/user/fetch?username=Azara" -H "accept: application/json"
+
  ```
