@@ -65,3 +65,4 @@ curl -X GET "http://localhost:8080/api/user/fetchall" -H "accept: application/js
 curl -X GET "http://localhost:8080/api/user/fetch?username=Azara" -H "accept: application/json"
 
  ```
+* Also handled exception for - user not found exception
